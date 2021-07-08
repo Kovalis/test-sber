@@ -25,7 +25,7 @@ $(document).ready(function () {
 		items: 1,
 		loop: true,
 		nav: true,
-		navText: ["<img src='/assets/img/right-arrow.svg'>","<img src='/assets/img/right-arrow.svg'>"],
+		navText: ["<img src='assets/img/right-arrow.svg'>","<img src='/assets/img/right-arrow.svg'>"],
 		dots: true,
 		responsive:{
 			0:{
