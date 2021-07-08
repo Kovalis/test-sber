@@ -189,31 +189,55 @@ h1, .h1{
   }   
 }
 .paralax-block{
+  position: relative;
   @media (max-width: 767px){
     margin-bottom: 51px;
+    &__img{
+      &--first {
+          right: 10.5%;
+          top: -7%;
+          max-width: 168.5px;
+      }
+      &--second{
+        left: -5%;
+        top: 37%;
+        max-width: 85.5px;
+      }
+      &--third{
+        left: 10%;
+        bottom: 7%;
+        max-width: 87.5px;
+      }
+      &--fourth{
+        left: 5%;
+        top: 9%;
+        max-width: 104px;
+      }
+    }
   }
-  @media (min-width: 768px){
-    position: relative;
+  @media (min-width: 768px){    
     text-align: right;
+    &__img{      
+      &--first{
+        right: 9.5%;
+        top: -2%;
+      }
+      &--second{
+        left: 12%;
+        top: 39%;
+      }
+      &--third{
+        left: 23%;
+        bottom: 11%;
+      }
+      &--fourth{
+        left: 19%;
+        top: 11%;
+      }
+    }
   }
   &__img{
     position: absolute;
-    &--first{
-      right: 9.5%;
-      top: -2%;
-    }
-    &--second{
-      left: 12%;
-      top: 39%;
-    }
-    &--third{
-      left: 23%;
-      bottom: 11%;
-    }
-    &--fourth{
-      left: 19%;
-      top: 11%;
-    }
   }
 }
 .category-list{
